@@ -1,0 +1,437 @@
+@font-face {
+    font-family: "open sens";
+    src: url("fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "open sens";
+}
+/*  */
+:root{
+    --primary-color: #e21b70;
+    --white-color: #fff;
+    --gray-color-: #666666;
+    --black-color: #333333;
+    --light-black-color: #39434d;
+}
+
+button{
+    padding: 15px 30px;
+    border-radius: 6px;
+    color: var(--white-color);
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+}
+
+select{
+    border: none;
+    outline: none;
+}
+h1{
+    margin: 50px;
+}
+h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--black-color);
+    margin: 15px 0;
+}
+span{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--black-color);
+    padding: 25px 0;
+    line-height: 2;
+}
+/*  */
+.header{
+    height: 100vh;
+}
+.headerbsign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.headerbsign h1{
+    font-size: 24px;
+}
+
+/*  */
+.headernav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+    width: 100%;
+    background: var(--white-color);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    position: fixed;
+    top: 70px;
+    z-index: 1000;
+    
+}
+.headernav button{
+    color: var(--gray-color-);
+    border: 1px solid var(--gray-color-);
+}
+.navright{
+    display: flex;
+    gap: 10px;
+}
+.headernav h1{
+    color: var(--primary-color);
+}
+.headercontent{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.headercontent .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 30px;
+    color: var(--black-color);
+}
+.headercontent .right{
+    width: 50%;
+    background-image: url('images/header/header\ hero\ img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.searchinputheader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+    width: 90%;
+    height: 70px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+.searchinputheader input{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    width: 70%;
+    height: 70%;
+    border: none;
+    outline: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+.searchinputheader input::placeholder{
+    padding: 5px;
+}
+.searchinputheader button{
+    background-color: var(--primary-color);
+}
+/*  */
+/*  */
+.onecontent h1{
+   margin-left: 60px;
+   margin: 50px;
+}
+.onecontentimg{
+    height: 80vh;
+    background-image: url('images/content/home-vendor-pk.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.onecontentimg div{
+    background-color: var(--white-color);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    height: 398px;
+    width: 600px;
+    position: absolute;
+    bottom: -239px;
+    left: 50px;
+    line-height: 2;
+    padding: 20px;
+    border-radius: 8px;
+}
+.onecontentimg div p{
+    font-size: 14px;
+    line-height: 2;
+    margin-top: 30px;
+}
+.onecontentimg div button{
+    margin-top: 15px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-weight: 600;
+}
+.blank{
+    height: 40vh;
+}
+/*  */
+.twocontent{
+    width: 95%;
+    height: 1700px;
+    margin: 0 auto;
+}
+.branchcard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    gap: 10px;
+}
+
+/*  */
+.card {
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+.card img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.card p {
+    margin: 0 0 20px;
+    font-size: 1em;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.button:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+/*  */
+.threecontent{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.poster {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* overflow: hidden; */
+    margin-top: 50px;
+    
+}
+
+.contentthree {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+}
+
+.contentthree h1 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: var(--white-color);
+}
+
+.contentthree p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--white-color);
+}
+
+.image-container {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    overflow: visible;
+   
+}
+
+.image-container img {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: -10%;
+    margin-bottom: -10%;
+    z-index: 1;
+}
+.fouth{
+    margin-top: 40px;
+}
+.four{
+    background-image: url('images/content/four.webp') !important;
+}
+.four div{
+    height: 258px;
+    bottom: -119px;
+}
+.questions{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 150px;
+    
+}
+/* footer */
+footer {
+    margin-top: 50px;
+    background-color: var(--white-color);
+    color: var(--light-black-color);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.footer-box {
+    flex: 1;
+    padding: 10px;
+}
+.footer-box h3 {
+    margin-bottom: 10px;
+}
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-box ul li {
+    margin-bottom: 5px;
+}
+.footer-box ul li a {
+    color: var(--light-black-color);
+    text-decoration: underline;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.footer-box ul li a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+
+
+
+
+/* media queries */
+
+
+@media only screen and (max-width: 1136px){
+    .twocontent{
+        height: 1900px;
+    }
+}
+@media only screen and (max-width: 970px){
+    .twocontent{
+        height: 2930px;
+    }
+}
+ 
+@media only screen and (max-width: 800px) {
+   .headercontent .left{
+    background-image: url('images/header/header\ hero\ img.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+    
+   }
+   .headercontent .right{
+    display: none;
+   }
+   .headercontent .left h1{
+    margin: 0 auto;
+   }
+  }
+
+  @media only screen and (max-width: 621px){
+    .headerbsign button{
+        height: 80%;
+        width: 200px;
+        margin-right: 10px;
+    }
+     .headerbsign h1{
+        font-size: 19px;
+     }
+    .twocontent{
+        height: 8715px;
+    }
+    .card{
+        width: 100%;
+    }
+    .card button{
+        width: 70%;
+        height: 15%;
+        bottom: 40px;
+    }
+    .four div{
+        width: 400px;
+        height: 270px;
+    }
+    .onecontentimg div{
+     width: 400px;
+        height: 456px;   
+    }
+    .card{
+        height: 400px;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  
